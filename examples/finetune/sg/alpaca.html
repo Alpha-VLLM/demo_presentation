@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: #f9f9f9;
+        font-family: 'Microsoft YaHei', sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+
+    h3 {
+        color: #666;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .chat-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    img.human {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-group {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-entry .message {
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .chat-entry.human .message {
+        background-color: lightblue;
+    }
+
+    .chat-entry.assistant {
+        flex-direction: row-reverse;
+    }
+
+    .chat-entry.assistant .message {
+        background-color: lavender;
+    }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Demos of Instruction-Following LLaMA2.</h2>
+        <h3>Instruction 1:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">Write an introduction for the github repository "LLaMA2-Accesory: An Open-source Toolkit for LLM Development".</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Hello and welcome to the LLaMA2-Accesory GitHub repository! <br><br>This is an open-source toolkit designed specifically for the development of LLM (Language Modeling) applications. Built on top of the powerful LLaMA2 library, this toolkit provides a user-friendly interface and a set of robust utilities to help you build and train your own LLM models with ease.<br><br> Whether you are a seasoned AI developer or just getting started with LLaMA2, this toolkit has got you covered with its robust features and extensive documentation. Let's get started on building your LLaMA2-based application today!</div>
+                    
+            </div>
+            <!-- You can continue the conversation here -->
+        </div>
+
+        <h3>Instruction 2:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">Tell me about alpaca.</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                 
+                        Alpacas, also known as vicuñas, are a group of South American camelids that belong to the genus Alpacas and the family Camelidae. They are native to the Andes mountain range in Peru, Bolivia, Ecuador, and Colombia. Alpacas are related to the guinea pig and capybara, but are much larger, with adult alpacas reaching weights of up to 250 pounds.
+                        <br><br>
+                        Alpacas have a unique physical appearance, with their most distinctive feature being their long, silky fur that can be up to 30 inches long. They have a pink coloration, with black stripes across their backs and legs. Alpacas have large, expressive eyes and small, alert ears. They also have a long, prehensile tail that can be over a meter in length.
+                        <br><br>
+                        Alpacas are herbivores, primarily subsisting on grasses and other vegetation. They are social animals, living in groups of up to 20 individuals. They communicate through a series of vocalizations, including moos, snorts, and whistles.
+                        <br><br>
+                        Alpacas have been domesticated and distributed worldwide, and are now raised primarily for their meat, fiber, and milk. They are also used for riding and racing, and are a popular tourist attraction. Despite being known as alpacas, these animals are not related to the deer family, but rather are part of the camelid family, which also includes camels, goats, and antelopes.
+
+                </div>
+                
+            </div>
+        </div> 
+            <h3>Instruction 3:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">How to build a personal webpage using the React library?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Building a personal webpage using the React library involves several steps. Here is a simple guide to help you get started:<br><br>
+                    
+                    <strong>1. Install React:</strong> The first step is to install React and its dependencies on your computer. You can do this by running the command <em>npm install --save React</em> or <em>yarn add React</em> in your command line.<br><br>
+                    
+                    <strong>2. Create a folder for your project:</strong> Create a folder for your React project and save your <em>package.json</em> file inside the folder. This will contain all the dependencies and the version of React that you are using.<br><br>
+                    
+                    <strong>3. Create a index.js file:</strong> Create an <em>index.js</em> file inside the root folder of your project. This file will contain the code that renders your webpage.<br><br>
+                    
+                    <strong>4. Import React and other dependencies:</strong> Inside the <em>index.js</em> file, import React and any other dependencies you are using. For example, you might import the <em>redux</em> library for managing the state of your application.<br><br>
+                    
+                    <strong>5. Create the actual HTML:</strong> Create the actual HTML for your webpage inside the <em>index.js</em> file. This is the file where the code is rendered.<br><br>
+                    
+                    <strong>6. Run the development server:</strong> Once your <em>index.js</em> file is ready, run the development server by running the command <em>npm start</em> or <em>yarn start</em> in your command line. This will open the browser to your development build.<br><br>
+                    
+                    <strong>7. Build and deploy:</strong> Once you are satisfied with the development build, you can create a production build by running the command <em>npm build</em> or <em>yarn build</em>. This will create a <em>.production</em> folder inside your project folder, and you can deploy the build to a web server.<br><br>
+                    
+                    That's it! You now have a personal webpage built with React.
+                </div>
+            </div>
+        </div>
+        <h3>Instruction 4:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">How can I develop my critical thinking skills?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Critical thinking is the ability to think clearly and rationally, analyzing information objectively and making a reasoned judgment. Developing critical thinking skills involves self-directed, self-disciplined, and self-monitored learning. Here are some strategies to help you develop your critical thinking skills:<br><br>
+                    
+                    <strong>1. Ask questions:</strong> Get into the habit of asking questions and challenging assumptions. Questions help you to clarify information, to learn more, and to identify gaps in your knowledge.<br><br>
+                    
+                    <strong>2. Read widely:</strong> Reading is one of the best ways to develop critical thinking skills. Reading exposes you to new ideas, perspectives, and arguments, which can help you to expand your knowledge and improve your critical thinking.<br><br>
+                    
+                    <strong>3. Understand different perspectives:</strong> Try to understand different viewpoints and approaches to problem-solving. This can help you to see an issue from multiple angles and to develop a more nuanced understanding.<br><br>
+                    
+                    <strong>4. Practice reflection:</strong> Take time to reflect on your thought processes and decisions. Consider what you did well, what you could do better, and any lessons you could learn for the future.<br><br>
+                    
+                    <strong>5. Engage in problem-solving exercises:</strong> Problem-solving exercises, such as brainstorming, mind mapping, or strategy development, can help you to develop your critical thinking skills.<br><br>
+                    
+                    <strong>6. Take a course:</strong> Enrolling in a course, whether online or in-person, can help you to learn from experts and to engage with other students who share your interests.<br><br>
+                    
+                    <strong>7. Work on a project:</strong> Taking on a project, whether at work or in your personal time, can help you to apply your critical thinking skills in a practical setting.<br><br>
+                    
+                    Overall, developing critical thinking skills involves a combination of reading, reflecting, learning from others, and practical experience. By practicing these strategies, you can improve your ability to think critically and analytically.
+                </div>
+                
+            <!-- You can continue the conversation here -->
+        </div>
+    </div>
+        <h3>Instruction 5:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">What if the Internet had been invented during the Renaissance period?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    If the Internet had been invented during the Renaissance period, it would have revolutionized the way people communicate, share information, and access entertainment. During this time, the printing press had just been invented, allowing for the mass production of books, which greatly increased literacy rates and spread knowledge throughout the world. The invention of the Internet would have greatly accelerated this process, making information and communication more accessible than ever before.<br><br>
+                    
+                    The Internet, with its vast network of computers and servers, would have allowed people to connect and share information in real-time, regardless of their physical location. This would have enabled the rapid exchange of ideas, information, and creativity, fostering greater collaboration and innovation.<br><br>
+                    
+                    In terms of entertainment, the Internet would have provided a vast array of options for people to access music, movies, and other forms of media. Online gaming, streaming services, and social media platforms would have been developed, allowing people to connect and engage with each other in new and exciting ways.<br><br>
+                    
+                    Overall, the invention of the Internet during the Renaissance period would have greatly transformed the world, making information and communication more accessible, and entertainment more diverse and interactive.
+                </div>
+                
+            <!-- You can continue the conversation here -->
+        </div>
+    </div>
+        <h3>Instruction 6:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message"> Explain the process of natural selection and how it contributes to the evolution and adaptation of species.</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Natural selection is a fundamental mechanism of evolution that drives the process of adaptation and change within populations. It is the process by which individuals that have certain advantageous traits or characteristics are more likely to survive and reproduce, passing on those traits to their offspring. Over time, this can lead to changes in the population, as the frequency of advantageous traits increases.<br><br>
+                
+                    The process of natural selection can be influenced by many factors, including environmental pressures, competition for resources, genetic variation, and random mutations. In any given population, there will be a range of variation in traits and characteristics, with some individuals having traits that make them more likely to survive and reproduce, while others may not be as well suited to their environment.<br><br>
+                
+                    The individuals that are better adapted to their environment are more likely to survive and reproduce, passing on their advantageous traits to their offspring. Over time, these traits become more common within the population, and the population as a whole becomes better adapted to its environment. This process can lead to the evolution of new species, as populations become increasingly different from one another over time.<br><br>
+                
+                    Natural selection is an important mechanism of evolution, as it enables species to adapt to changing environments and respond to new challenges. It helps populations to evolve and become better suited to their environment, increasing their chances of survival and reproduction. Overall, natural selection is a key factor in the ongoing process of evolution and adaptation of species.
+                </div>
+                
+            <!-- You can continue the conversation here -->
+        </div>
+        </div>     
+            <!-- You can continue the conversation here -->
+        </div>
+        
+        <!-- Conversations go here -->
+    </div>
+</body>
+</html>

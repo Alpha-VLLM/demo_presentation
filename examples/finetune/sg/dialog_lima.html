@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: #f9f9f9;
+        font-family: 'Microsoft YaHei', sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+
+    h3 {
+        color: #666;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .chat-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    img.human {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-group {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-entry .message {
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .chat-entry.human .message {
+        background-color: lightblue;
+    }
+
+    .chat-entry.assistant {
+        flex-direction: row-reverse;
+    }
+
+    .chat-entry.assistant .message {
+        background-color: lavender;
+    }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Demos of Chatbot LLaMA2-chat<br>Fine-tuned using the lima dataset.</h2>
+        <h3>Convesation 1:</h3>
+        <p>A chat between a curious human and an artificial intelligence assistant.<br> The assistant gives helpful, detailed, and polite answers to the human's questions.</p>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">Write a romance about a couple who fall in love while travelling abroad.</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    The airport was chaotic as always. I sighed and looked for my gate. I was exhausted after my long flight. I had been travelling for a month and I was ready to go home.<br><br>
+                    
+                    I found my gate and sat down. I looked around and saw a beautiful woman sitting next to me. She was reading a book. I couldn't help but stare. She had long brown hair and eyes that seemed to sparkle. I felt my heart skip a beat. She looked up and smiled at me. I smiled back.<br><br>
+                    
+                    "Where are you heading?" she asked.<br><br>
+                    
+                    "Home," I replied. "I've been travelling for a month. I'm ready to go home and see my family."<br><br>
+                    
+                    "I'm sorry," she said. "I didn't catch your name."<br><br>
+                    
+                    "It's Jack," I said. "Jack Miller."<br><br>
+                    
+                    "I'm Sarah," she said. "Sarah Jones."<br><br>
+                    
+                    We talked for the rest of the flight. We discovered that we were both from the same city and had a lot in common. When the flight attendant announced that we would be landing soon, we both looked at each other and smiled.<br><br>
+                    
+                    "It was nice meeting you, Jack," Sarah said. "I had a great time talking to you."<br><br>
+                    
+                    "Likewise," I replied. "I had a great time. Maybe we can keep in touch?"<br><br>
+                    
+                    "I'd like that," she said. "Here's my number. Call me when you get home."<br><br>
+                    
+                    I took her number and smiled. "I will," I said. "Good luck with the rest of your trip."<br><br>
+                    
+                    "Thanks," she said. "You too."<br><br>
+                    
+                    We said our goodbyes and went our separate ways. I watched her walk away and felt a sense of sadness. I wasn't sure why. I had just met her, after all. But there was something about her that made me feel at ease.<br><br>
+                    
+                    I arrived at my hotel and checked in. I was exhausted and decided to take a nap. I lay down on the bed and thought about Sarah. I wondered what she was doing. I hoped she was having a good time. I fell asleep thinking about her.
+                    </div>
+                    
+                
+            </div>
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">This sounds like a beautiful story. Can you add some more details about Jack and Sarah's personalities and what drew them to each other?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Jack Miller was tired. He had just finished a month-long backpacking trip through Europe and was now making his way home. He had been to many amazing places and had met a lot of interesting people, but he was ready to go home and see his family.<br><br>
+                    
+                    Sarah Jones was also making her way home. She had been travelling for the past two months and was now heading back to her hometown. She was excited to see her family and friends, but she was also a little bit sad to be going back to reality.<br><br>
+                    
+                    While waiting for their flight at the airport, Jack and Sarah struck up a conversation. They discovered that they were both from the same city and had a lot in common. They talked for hours, sharing stories about their travels and their lives.<br><br>
+                    
+                    As the flight attendant made her way down the aisle, Sarah handed her business card to Jack. "In case you're ever in town," she said with a smile.<br><br>
+                    
+                    Jack smiled back. "I'd like that," he replied. "Here's my card."<br><br>
+                    
+                    They exchanged cards and continued talking for the rest of the flight. When the plane landed, they said their goodbyes and went their separate ways.<br><br>
+                    
+                    Sarah arrived at her house and was greeted by her parents and sister. "How was your trip?" her mother asked.<br><br>
+                    
+                    "It was great," Sarah replied. "I met a lot of interesting people and saw some amazing places."<br><br>
+                    
+                    "We're so proud of you," her father said. "You travelled alone for two months. That takes courage."<br><br>
+                    
+                    Sarah smiled and hugged her family. "I love you all," she said.<br><br>
+                    
+                    Jack arrived at his apartment and threw his bags down. He was exhausted after his long flight. He took a shower and fell asleep immediately.<br><br>
+                    
+                    The next morning, Jack woke up feeling refreshed. He made himself some breakfast and sat down at the kitchen table to eat. He was just finishing up when his phone rang.<br><br>
+                    
+                    "Hello?" he said.<br><br>
+                    
+                    "Hey," a familiar voice said on the other end. "It's Sarah."<br><br>
+                    
+                    Jack smiled. "Hey," he replied. "How are you?"<br><br>
+                    
+                    "I'm good," she said. "I just wanted to check in and see if you're doing okay."
+                    </div>
+                    
+                
+                
+            </div>
+            <!-- You can continue the conversation here -->
+        </div>
+
+        <h3>Conversation 2:</h3>
+        <p>A chat between a curious human and an artificial intelligence assistant.<br> The assistant gives helpful, detailed, and polite answers to the human's questions.</p>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">Write about a time when you learned an important lesson about communication.</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    I was working as a customer service representative for a major telecommunications company. It was a pretty typical day, lots of customers with different issues. One particular call stuck with me though.<br><br> An elderly gentleman was having trouble with his internet. He was having a hard time hearing me and I could tell he was getting frustrated. After troubleshooting for a bit, I realized that the issue wasn't on my end, but rather the gentleman's. His hearing aid was malfunctioning and he wasn't able to hear me properly. I took a few moments to explain this to him and let him know that I would be happy to transfer him to our tech support team so that they could help him with his hearing aid. <br><br> The lesson I learned from this experience is that sometimes, the issue isn't on the other end, but rather on your own. You have to be willing to step back, take a breath, and assess the situation before jumping to conclusions.
+                </div>
+                
+            </div>
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">I like the story, but could you add some tips on how to effectively communicate with colleagues in a professional setting?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                    Sure, here are some tips on how to effectively communicate with colleagues in a professional setting:<br><br>
+                    <strong>1. Be clear and concise in your communication:</strong> Get to the point quickly and avoid using jargon or industry buzzwords that your colleagues may not understand.<br><br>
+                    
+                    <strong>2. Listen actively when others are speaking:</strong> Nod your head, ask clarifying questions, and avoid interrupting.<br><br>
+                    
+                    <strong>3. Respect the time and attention of your colleagues:</strong> Don't monopolize conversations or meetings, and be mindful of the amount of time you're taking away from others.<br><br>
+                    
+                    <strong>4. Be open and honest in your communication:</strong> Don't withhold information or try to manipulate others.<br><br>
+                    
+                    <strong>5. Follow up on communication:</strong> Whether it's an email you sent or a meeting you had, make sure that everyone is on the same page and that any necessary actions are being taken.<br><br>
+                    
+                    By following these tips, you can ensure that your communication with colleagues is effective and professional.
+                </div>
+            </div>
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">Could you expand on the tip about respecting the time and attention of colleagues?</div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/assistant.png">
+                <div class="message">
+                   Sure, here is some more information on the tip about respecting the time and attention of colleagues:<br><br>
+                    
+                    <strong>1. Don't monopolize conversations or meetings:</strong> If someone else has something to contribute, let them. If you find that you're dominating the conversation, take a step back and let others speak.<br><br>
+                    
+                    <strong>2. Be mindful of the amount of time you're taking away from others:</strong> If you're in a meeting or working on a project with a deadline, be aware of how much time you're using and how much others are using. Don't take up more time than necessary.<br><br>
+                    
+                    <strong>3. Avoid multitasking:</strong> It may seem like you're being efficient by doing multiple things at once, but in reality, you're probably not giving your full attention to any one thing. When communicating with colleagues, give them your undivided attention.<br><br>
+                    
+                    <strong>4. Be considerate of others' schedules:</strong> If you know that someone has a tight deadline or is leaving for vacation soon, don't schedule a meeting with them during that time.<br><br>
+                    
+                    By following these guidelines, you can ensure that your communication with colleagues is respectful of their time and attention.
+                </div>
+                
+            <!-- You can continue the conversation here -->
+        </div>
+        <!-- Conversations go here -->
+    </div>
+</body>
+</html>
