@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="../../../assets/icon.ico" type="image/x-icon">
+    <title>in-context</title>
+    <style>
+    body {
+        background-color: #f9f9f9;
+        font-family: 'Microsoft YaHei', sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+
+    h3 {
+        color: #666;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .chat-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    img.human {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-group {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-entry .message {
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .chat-entry.human .message {
+        background-color: lightblue;
+    }
+
+    .chat-entry.assistant {
+        flex-direction: row-reverse;
+    }
+
+    .chat-entry.assistant .message {
+        background-color: lavender;
+    }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Demos of LLaMA2-Accessory<br>Multimodal in-context learning.</h2>
+        <h3>Convesation 1:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">
+                    <p> <img src="../../../assets/imgs/图片1.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>This is a chinchilla. They are mainly found in Chile.</p>
+                    <p><img src="../../../assets/imgs/图片2.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>This is a shiba. They are very popular in Japan.</p>
+                    <p><img src="../../../assets/imgs/图片3.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>This is ?</p>
+                </div>
+            </div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/llama.png">
+                <div class="message">
+                    This is a flamingo. They are mainly found in Africa.
+                </div>
+            
+        </div></div>
+
+        <h3>Conversation 2:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">
+                    <p> <img src="../../../assets/imgs/图片4.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>What is the title of this painting? Answer: The Hallucinogenic Toreador.
+                    </p>
+                    <p><img src="../../../assets/imgs/图片5.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>Where is this painting displayed? Answer: Louvres Museum, Paris.
+                    </p>
+                    <p><img src="../../../assets/imgs/图片6.png" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>What is the name of the city where this was painted? Answer: ?</p>
+                </div></div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/llama.png">
+                <div class="message">
+                    Arles.</div>
+                
+            </div>
+            
+            <!-- You can continue the conversation here -->
+        </div>
+        <h3>Conversation 3:</h3>
+        <div class="chat-group">
+            <div class="chat-entry human">
+                <img class="human" src="../../../assets/human.png">
+                <div class="message">
+                    <p> <img src="../../../assets/imgs/图片7.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>Output: underground
+                    </p>
+                    <p><img src="../../../assets/imgs/图片8.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>Output: underground
+                    </p>
+                    <p><img src="../../../assets/imgs/图片9.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+                    <p>Output:?
+                    </p>
+                </div></div>
+            <div class="chat-entry assistant">
+                <img class="image" src="../../../assets/llama.png">
+                <div class="message">
+                    chapel hill.</div>
+                
+            </div>
+            
+            <!-- You can continue the conversation here -->
+        </div>
+        <!-- Conversations go here -->
+    </div>
+</body>
+</html>
