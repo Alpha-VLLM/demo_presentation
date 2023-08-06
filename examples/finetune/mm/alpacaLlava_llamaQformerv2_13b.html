@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="icon" href=".../../../assets/imgs/.../../../assets/imgs/.../../../assets/imgs/assets/icon.ico" type="image/x-icon">
+  <title>alpacaLlava_llamaQformerv2_13b</title>
+    <style>
+    body {
+        background-color: #f9f9f9;
+        font-family: 'Microsoft YaHei', sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+
+    h3 {
+        color: #666;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .chat-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    img.human {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-group {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .chat-entry .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-entry .message {
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .chat-entry.human .message {
+        background-color: lightblue;
+    }
+
+    .chat-entry.assistant {
+        flex-direction: row-reverse;
+    }
+
+    .chat-entry.assistant .message {
+        background-color: lavender;
+    }
+    </style>
+</head>
+<body>
+<div class="chat-container">
+<h1>Demos of Multi-Model LLaMA 2</h1>
+
+<h3>Stage One:</h3>
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p> <img src="../../../assets/imgs/caption1.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+    A group of flamingos standing on top of a lush green field.
+        </div>
+    
+</div>
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/caption2.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>The author?</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            The author of this painting is Vincent Van Gogh.
+        </div>
+    
+</div>
+</div>
+
+<h3>Stage Two Conversation 1:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction1.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>Describe the image.</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The image features a colorful background with a large, eye-catching banner displaying the "Summer Power Sale." The banner has a blue, yellow, and pink color scheme, and the text is in a bold, modern font. The sale sign has a prominent "50" symbol, indicating the discount or promotional offer. The overall design of the banner is visually appealing and effectively conveys the message of the summer, limited-time offer to potential customers.</p>
+        </div>
+    </div>
+</div>
+
+
+<h3>Stage Two Conversation 2:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction2.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+  
+            <p>What are the emotions of the animal in the picture?</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+       
+            <p>The animal in the picture appears to be happy and relaxful, as it is smiling and laughing while sitting on the flower.</p>
+        </div>
+    </div>
+</div>
+<h3>Stage Two Conversation 3:</h3>
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction3.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>What is the food in the picture? Provide recipes for making the food in the picture.</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The food in the picture is a set of macaroons, which is a type of small, round, and crispy pastry. Macaroons are typically made with ingredients such as almond flour, butter, sugar, and egg whites. There are several recipes available online for making these delicious treats, such as the following:</p>
+
+            <p><strong>Almond-covered Macaroons:</strong></p>
+
+            <p><strong>Ingredients:</strong></p>
+
+            <ul>
+                <li>1 cup of almond flour</li>
+                <li>1/2 cup of granulated sugar</li>
+                <li>1/4 cup of unsalted butter, melted</li>
+                <li>1 teaspoon of vanilla extract</li>
+                <li>a few drops of food coloring (optional)</li>
+            </ul>
+
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                <li>In a large mixing bowl, mix together the almond flour, granulated sugar, and melted butter. Add the vanilla extract and mix well.</li>
+                <li>Add a few drops of food coloring, if using, and mix again.</li>
+                <li>Scoop small portions of the mixture and place them on the prepared baking sheet, ensuring enough space between each macaroon.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<h3>Stage Two Conversation 4:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction4.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>What is the creature in the picture? What was its expression like?</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The creature in the picture is a cat with its mouth wide open, showing its large, long, razor-sharp teeth aggressively. Its tongue is sticking out, and it appears to be growling or hissing menacingly.</p>
+        </div>
+    </div>
+</div>
+
+<h3>Stage Two Conversation 5:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction5.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>What style is the building in the picture? Where is it likely to be located?</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The building in the picture is likely of Chinese style, given it is described as a Chinese palace. The presence of the Forbidden City in the background further supports this idea, as the Forbidden City is a famous palace complex in Beijing, China.</p>
+        </div>
+    </div>
+</div>
+
+<h3>Stage Two Conversation 6:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction6.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>Describe and summarize the logical relationships in the diagram</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The diagram displays a relationship map between various concepts, with each concept positioned at the center of the circle. The map includes the following concepts: religion, culture, belief, church, state, economy, war war. These concepts are interconnected, with each one influencing the other. For example, religion and culture are closely related, as they both contribute to the development of beliefs and customs. The state often has an impact on the economy, as it regulates businesses and resources. War can result from conflicts over resources, beliefs, or political ideologies. The diagram illustrates how these concepts are interconnected and can affect one another, creating a clear representation of the complex relationships between the various elements in society.</p>
+        </div>
+    </div>
+</div>
+
+<h3>Stage Two Conversation 7:</h3>
+
+<div class="chat-group">
+    <div class="chat-entry human">
+        <img class="human" src="../../../assets/human.png">
+        <div class="message">
+            <p><img src="../../../assets/imgs/instruction7.jpg" style="width: 50%; margin-bottom: 10px;"></p>
+            <p>Describe the picture in the image below. What is the artistic and aesthetic value of this picture?</p>
+        </div>
+    </div>
+    <div class="chat-entry assistant">
+        <img class="image" src="../../../assets/llama.png">
+        <div class="message">
+            <p>The image is a stunning visual representation of a waterfall with an impressive full moon rising behind it. The artistic and aesthetic value of this picture lie in the combination of the natural beauty of the waterfall and the captivating contrast between the bright, illuminated moon and the dark, shadows within the scene.The image captures the play of light and shadows, with the moon's light shining on the water and casting a glow on the surrounding landscape. The waterfall's flow creates a dynamic element, the composition, adding a sense of movement and energy to the scene. The contrast between the luminous moon and the dark shadows adds depth and richness to the image, making it visually striking and appealing.Moreover, the image may evoke emotions of tranquility, awe, and admiration for the beauty of nature. It encourages viewers to appreciate the interplay between light and dark, as well as the delicate balance between the waterfall and the moon. Overall, the picture is a beautiful and captivating piece of art that showcases the wonders and splendor of the natural world.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
